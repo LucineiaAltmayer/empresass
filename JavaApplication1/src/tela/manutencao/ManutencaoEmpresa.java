@@ -59,7 +59,6 @@ public class ManutencaoEmpresa extends javax.swing.JDialog {
         jtfCodigo = new javax.swing.JTextField();
         jtfNome_Fantasia = new javax.swing.JTextField();
         jtfRazao_Social = new javax.swing.JTextField();
-        jtfAbertura = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -95,8 +94,6 @@ public class ManutencaoEmpresa extends javax.swing.JDialog {
 
         jButton4.setText("Cancelar");
 
-        jtfAbertura.setText("Abertura:");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -130,10 +127,7 @@ public class ManutencaoEmpresa extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnExcluir)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jtfAbertura)))
+                        .addComponent(jButton4)))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -153,9 +147,7 @@ public class ManutencaoEmpresa extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jtfRazao_Social, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jtfAbertura)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAdicionar)
                     .addComponent(btnAlterar)
@@ -230,7 +222,6 @@ controlador.ControladorEmpresa.excluir(this);        // TODO add your handling c
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jtfAbertura;
     public javax.swing.JTextField jtfCodigo;
     public javax.swing.JTextField jtfNome_Fantasia;
     public javax.swing.JTextField jtfRazao_Social;

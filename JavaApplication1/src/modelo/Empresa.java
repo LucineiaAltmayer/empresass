@@ -13,25 +13,7 @@ public class Empresa {
     private String nome_fantasia;
     private String razao_social;
     private Integer codigo;
-    private String abertura;
-    private String fundacao;
-
-    public String getAbertura() {
-        return abertura;
-    }
-
-    public void setAbertura(String abertura) {
-        this.abertura = abertura;
-    }
-
-    public String getFundacao() {
-        return fundacao;
-    }
-
-    public void setFundacao(String fundacao) {
-        this.fundacao = fundacao;
-    }
-
+    
     @Override
     public String toString() {
         return nome_fantasia;

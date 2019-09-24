@@ -17,13 +17,11 @@ import java.util.List;
  */
 public class DaoEmpresa {
      public static boolean inserir(Empresa objeto) {
-        String sql = "INSERT INTO empresa (razao_social, nome_fantasia, abertura, fundacao) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO empresa (razao_social, nome_fantasia) VALUES (?, ?)";
         try {
             PreparedStatement ps = conexao.Conexao.getConexao().prepareStatement(sql);
             ps.setString(1, objeto.getRazao_social());
             ps.setString(2, objeto.getNome_fantasia());
-            ps.setString(3, objeto.getNome_fantasia());
-            ps.setString(4, objeto.getNome_fantasia());
             ps.executeUpdate();
             return true;
         } catch (SQLException | ClassNotFoundException ex) {
